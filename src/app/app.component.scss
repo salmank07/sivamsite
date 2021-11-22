@@ -1,0 +1,374 @@
+@import "../color.scss";
+.navbar {
+  background-color: #000c20;
+  color: #fff;
+}
+.nav-item {
+  padding: 20px 14px;  
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  transition: all .3s ease-out 0s;
+}
+.nav-item:hover {
+  color: $primary-color;
+}
+.navbar-nav {
+  padding-right: 20px;
+}
+.navbar-toggler {
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 22px;
+}
+.navbar-brand {
+  padding-left: 30px;
+}
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: WHITE;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  @media (max-height: 500px) {
+    #intro {
+      height: 150vh;
+    }
+  }
+  
+  #intro .title {
+    color: white;
+    font-size: 95px;
+    line-height: 95px;
+    font-weight: 600;
+    font-family: "Teko",sans-serif;
+    white-space: nowrap;
+    
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #intro .title {
+      font-size: 60px;
+      line-height: 1.2;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px)
+    { #intro .title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+  @media (min-width: 575px) and (max-width: 767px) {
+    #intro .title {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+  }
+  @media (max-width: 575px) {
+    #intro .title {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  }
+  #intro span {
+    color: $primary-color;
+    font-family: "Teko",sans-serif;
+  }
+
+  #intro .carousel,
+  #intro .carousel-inner,
+  #intro .carousel-item,
+  #intro .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #intro .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #intro .carousel-item::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+  }  
+  
+  #intro .container {
+    text-align: center;
+  }
+  #intro p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  
+  @media (min-width: 1024px) {
+    #intro p {
+      width: 60%;
+    }
+  }
+  
+  
+  
+  #intro .carousel-fade .carousel-inner .carousel-item {
+    transition-property: opacity;
+  }
+  
+  .carousel-caption {
+    bottom: 38vh;
+  }
+  
+  #intro .intro-img {
+    background-size: cover;
+    object-fit: cover;
+  }
+  .contact {
+      margin: 70px 0;
+  }
+  .infoicon {
+    line-height: 55px;
+    text-align: center;    
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #FE5F15;
+    color: white;
+    font-size: 20px;
+      
+  }
+  .infocaption {
+    padding-left: 20px;
+    color: #677294;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .wrapper p {
+    margin: 0;
+  }
+  .inlinetext {
+    color: #2c234d;
+    font-size: 18px;
+    margin-bottom: 0px;
+    display: block;
+    font-weight: 600;
+  }
+  @media (max-width: 600px) {
+    .inlinetext {
+      font-size: 16px;
+    }
+  }
+  .infoalign {
+    display: flex;
+    align-items: center;    
+  }
+
+  // ----------------whatwedo styles starts here---------------
+  .whatwedo {    
+    position: relative;
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .clipath {       
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    color: black;
+    
+  } 
+  .whatwedo h2 {
+    margin-top: 100px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    
+  }
+  .whatwedo p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #aboutus {
+    margin-bottom: 65px;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    min-height: 846px;
+  }
+  @media (max-width: 575px) {
+    #aboutus {
+      min-height: 789px;
+    }
+  }
+  
+  #aboutus::before {
+    content: '';
+    display: table;
+  }
+  .orangeline {
+    margin-top: 252px;
+    margin-bottom: 0;
+    background-color: $primary-color;
+    height: 279px;
+  }
+  @media (max-width: 575px) {
+    .orangeline  {
+      height: 226px;
+    }
+  }
+  .imagecircle {
+    width: 376px;
+    height: 376px;
+    background-image: url(../assets/images/face.jpg);
+    background-position: 50% 50%;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    margin: -471px auto 0;
+    border-radius: 50% !important;
+  }
+  @media (max-width: 575px) {
+    .imagecircle  {
+    width: 340px;
+    height: 340px;
+    margin-top: -418px;
+    }
+  }
+  #aboutus h2 {
+    letter-spacing: 4px;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 45px 80px 0;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.1;
+    text-align: center;
+  }
+  @media (max-width: 575px) {
+    #aboutus h2 {
+      font-size: 3.75rem;
+    }
+  }
+  #aboutus p {
+    width: 482px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    
+  }
+  .aboutustext {
+    margin: 45px 379px 0;
+  }
+
+  .texteffect {
+    color: $primary-color;
+}
+@media (max-width: 575px) {
+   #aboutus p,
+  .aboutustext {
+    width: 340px;
+    
+  }
+}
+#services {
+  text-align: center;
+}
+.serviceheading {
+  font-size: 18px;
+  display: block;
+  color: #f15f22;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+  text-align: center;
+  
+  
+}
+.card-title {
+  transition: .2s all ease-out;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 21px;
+  color: #1c165c;
+}
+.card-text {  
+  color: #57667e;
+  font-size: 16px;
+}
+#services h2 {
+  color: #2c234d;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 48px;
+  
+}
+.servicetext {
+  font-family: 'Open Sans',sans-serif;
+  color: #666666 !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.rowmerge {
+  margin-bottom: -250px;
+}
+.merge {
+  margin: -68px auto 60px;
+}
+.rowmerge::before {
+  content: '';
+  display: table;
+}
+.serviceimg {
+  height: 380px;
+  object-fit: cover;
+  display: block;  
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.card {
+  padding: 20px 15px;
+  min-height: 325px;
+  transition: all .4s ease-out;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+}
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  background: #ff5f13;  
+  transition: .6s;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 6px;
+}
+#services .card:hover::before {
+  height: 100%;
+  
+
+}
+.card:hover {
+  color: #fff;
+}
